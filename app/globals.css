@@ -1,6 +1,0 @@
-@tailwind base; @tailwind components; @tailwind utilities;
-body { background: #FFFFFF; color: #333333; -webkit-tap-highlight-color: transparent; font-family: sans-serif; }
-.bg-dot { background-image: radial-gradient(#FFD700 2px, transparent 2px); background-size: 20px 20px; }
-.lab-shadow { shadow-[10px_10px_0px_#333]; }
-.yellow-btn { background: #FFEE00; border: 4px solid #333; box-shadow: 6px 6px 0px #333; }
-.yellow-btn:active { transform: translate(3px, 3px); box-shadow: 2px 2px 0px #333; }
