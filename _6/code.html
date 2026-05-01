@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#1b1f31",
+                    "on-tertiary-fixed": "#291800",
+                    "on-primary-fixed-variant": "#454652",
+                    "secondary-fixed-dim": "#4ad7f3",
+                    "surface-container-highest": "#303447",
+                    "primary-container": "#1a1b26",
+                    "on-surface": "#dee1fb",
+                    "on-secondary-container": "#00424d",
+                    "on-primary-fixed": "#1a1b26",
+                    "tertiary-fixed-dim": "#f0be75",
+                    "tertiary-container": "#291800",
+                    "on-primary-container": "#838391",
+                    "surface-container-high": "#25293c",
+                    "on-surface-variant": "#c8c5cc",
+                    "surface-container-lowest": "#090d1f",
+                    "tertiary": "#f0be75",
+                    "on-error-container": "#ffdad6",
+                    "primary": "#c6c5d4",
+                    "outline-variant": "#47464c",
+                    "secondary-container": "#00b6d0",
+                    "inverse-primary": "#5d5d6a",
+                    "secondary-fixed": "#a6eeff",
+                    "error": "#ffb4ab",
+                    "on-error": "#690005",
+                    "tertiary-fixed": "#ffddb2",
+                    "on-primary": "#2f303b",
+                    "error-container": "#93000a",
+                    "surface-tint": "#c6c5d4",
+                    "surface-container-low": "#161b2d",
+                    "secondary": "#4ad7f3",
+                    "surface-dim": "#0e1224",
+                    "on-secondary-fixed-variant": "#004e5b",
+                    "inverse-on-surface": "#2b2f43",
+                    "primary-fixed": "#e2e1f1",
+                    "on-tertiary-container": "#a77c3a",
+                    "inverse-surface": "#dee1fb",
+                    "surface-variant": "#303447",
+                    "on-secondary": "#00363f",
+                    "primary-fixed-dim": "#c6c5d4",
+                    "on-secondary-fixed": "#001f25",
+                    "on-tertiary": "#442b00",
+                    "surface-bright": "#34384c",
+                    "outline": "#919096",
+                    "surface": "#0e1224",
+                    "background": "#0e1224",
+                    "on-tertiary-fixed-variant": "#624000",
+                    "on-background": "#dee1fb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "lg": "40px",
+                    "sm": "16px",
+                    "base": "4px",
+                    "md": "24px",
+                    "gutter": "20px",
+                    "xs": "8px",
+                    "margin": "32px",
+                    "xl": "64px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Space Grotesk"],
+                    "mono-data": ["Space Grotesk"],
+                    "h1": ["Space Grotesk"],
+                    "label-caps": ["Space Grotesk"],
+                    "body-md": ["Space Grotesk"],
+                    "h3": ["Space Grotesk"],
+                    "h2": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "mono-data": ["14px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "h2": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        body {
+            background-color: #0e1224;
+            color: #dee1fb;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen flex flex-col">
+<header class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-6 h-16 bg-[#1A1B26] border-b-2 border-[#414868] shadow-[0px_4px_0px_0px_rgba(26,27,38,0.5)]">
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-[#2DD4BF]" data-icon="terminal">terminal</span>
+<span class="text-xl font-black text-[#2DD4BF] tracking-widest font-['Space_Grotesk'] uppercase tracking-tighter font-bold">サイバー・ラボ ターミナル</span>
+</div>
+<div class="flex items-center gap-sm">
+<button class="text-[#565F89] hover:bg-[#2F3549] hover:text-[#2DD4BF] active:translate-y-[2px] transition-all duration-75 p-2 rounded">
+<span class="material-symbols-outlined" data-icon="account_tree">account_tree</span>
+</button>
+</div>
+</header>
+<main class="flex-grow flex flex-col items-center justify-center px-6 pt-24 pb-32">
+<div class="w-full max-w-2xl">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="md:col-span-12 flex flex-col items-center text-center mb-xl">
+<div class="relative mb-lg">
+<div class="absolute inset-0 bg-secondary blur-3xl opacity-10 rounded-full"></div>
+<div class="relative w-32 h-32 border-4 border-secondary rounded-full flex items-center justify-center shadow-[8px_8px_0px_0px_rgba(26,27,38,0.5)] bg-surface-container">
+<span class="material-symbols-outlined text-secondary !text-6xl" data-icon="verified" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+</div>
+<h1 class="font-h1 text-h1 text-on-background mb-base">プロトコル完了</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">アクセス権限が付与されました</p>
+</div>
+<div class="md:col-span-12 bg-surface-container border-2 border-[#414868] p-lg shadow-[8px_8px_0px_0px_rgba(26,27,38,0.5)] mb-md">
+<div class="flex flex-col gap-md">
+<div class="flex justify-between items-center border-b border-outline-variant pb-base">
+<span class="font-label-caps text-label-caps text-on-primary-container">SYSTEM_ID</span>
+<span class="font-mono-data text-mono-data text-secondary">#NX-8842-DELTA</span>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter">
+<div class="space-y-xs">
+<span class="font-label-caps text-label-caps text-on-primary-container block">予約日時 / SCHEDULE</span>
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="calendar_today">calendar_today</span>
+<span class="font-body-md text-body-md">2024.11.15 [FRI]</span>
+</div>
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="schedule">schedule</span>
+<span class="font-body-md text-body-md">14:00 - 15:30 JST</span>
+</div>
+</div>
+<div class="space-y-xs">
+<span class="font-label-caps text-label-caps text-on-primary-container block">場所 / FACILITY</span>
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="location_on">location_on</span>
+<span class="font-body-md text-body-md">メイン・ラボ：第3ターミナル</span>
+</div>
+<div class="flex items-center gap-xs">
+<span class="material-symbols-outlined text-secondary text-sm" data-icon="meeting_room">meeting_room</span>
+<span class="font-body-md text-body-md">アクセスコード: 8842</span>
+</div>
+</div>
+</div>
+<div class="mt-md p-sm bg-surface-container-low border border-outline-variant border-dashed">
+<div class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-tertiary" data-icon="info">info</span>
+<p class="font-mono-data text-mono-data text-on-surface-variant">
+                                    注意事項：入室時は生体認証が必要です。ターミナルAのリーダーにデバイスをかざしてください。
+                                </p>
+</div>
+</div>
+</div>
+</div>
+<div class="md:col-span-12 grid grid-cols-1 sm:grid-cols-2 gap-gutter mt-sm">
+<button class="bg-[#2DD4BF] text-[#1A1B26] font-label-caps py-md px-lg border-2 border-[#1A1B26] shadow-[4px_4px_0px_0px_#414868] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center gap-sm">
+<span class="material-symbols-outlined" data-icon="calendar_add_on">calendar_add_on</span>
+                        カレンダーに追加
+                    </button>
+<button class="bg-transparent text-secondary font-label-caps py-md px-lg border-2 border-secondary shadow-[4px_4px_0px_0px_rgba(26,27,38,0.5)] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center gap-sm">
+<span class="material-symbols-outlined" data-icon="arrow_back">arrow_back</span>
+                        ログに戻る
+                    </button>
+</div>
+</div>
+</div>
+</main>
+<div class="md:hidden">
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-20 px-2 pb-safe bg-[#1A1B26] border-t-2 border-[#414868]">
+<a class="flex flex-col items-center justify-center text-[#565F89] py-1 px-4 hover:bg-[#2F3549]" href="#">
+<span class="material-symbols-outlined" data-icon="travel_explore">travel_explore</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold uppercase">探索</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#565F89] py-1 px-4 hover:bg-[#2F3549]" href="#">
+<span class="material-symbols-outlined" data-icon="layers">layers</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold uppercase">マップ</span>
+</a>
+<a class="flex flex-col items-center justify-center bg-[#2DD4BF] text-[#1A1B26] rounded-sm py-1 px-4 scale-95 shadow-none translate-y-[2px]" href="#">
+<span class="material-symbols-outlined" data-icon="event_upcoming">event_upcoming</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold uppercase">予約</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#565F89] py-1 px-4 hover:bg-[#2F3549]" href="#">
+<span class="material-symbols-outlined" data-icon="settings_input_component">settings_input_component</span>
+<span class="font-['Space_Grotesk'] text-[10px] font-bold uppercase">システム</span>
+</a>
+</nav>
+</div>
+</body></html>

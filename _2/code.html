@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#1b1f31",
+                    "on-tertiary-fixed": "#291800",
+                    "on-primary-fixed-variant": "#454652",
+                    "secondary-fixed-dim": "#4ad7f3",
+                    "surface-container-highest": "#303447",
+                    "primary-container": "#1a1b26",
+                    "on-surface": "#dee1fb",
+                    "on-secondary-container": "#00424d",
+                    "on-primary-fixed": "#1a1b26",
+                    "tertiary-fixed-dim": "#f0be75",
+                    "tertiary-container": "#291800",
+                    "on-primary-container": "#838391",
+                    "surface-container-high": "#25293c",
+                    "on-surface-variant": "#c8c5cc",
+                    "surface-container-lowest": "#090d1f",
+                    "tertiary": "#f0be75",
+                    "on-error-container": "#ffdad6",
+                    "primary": "#c6c5d4",
+                    "outline-variant": "#47464c",
+                    "secondary-container": "#00b6d0",
+                    "inverse-primary": "#5d5d6a",
+                    "secondary-fixed": "#a6eeff",
+                    "error": "#ffb4ab",
+                    "on-error": "#690005",
+                    "tertiary-fixed": "#ffddb2",
+                    "on-primary": "#2f303b",
+                    "error-container": "#93000a",
+                    "surface-tint": "#c6c5d4",
+                    "surface-container-low": "#161b2d",
+                    "secondary": "#4ad7f3",
+                    "surface-dim": "#0e1224",
+                    "on-secondary-fixed-variant": "#004e5b",
+                    "inverse-on-surface": "#2b2f43",
+                    "primary-fixed": "#e2e1f1",
+                    "on-tertiary-container": "#a77c3a",
+                    "inverse-surface": "#dee1fb",
+                    "surface-variant": "#303447",
+                    "on-secondary": "#00363f",
+                    "primary-fixed-dim": "#c6c5d4",
+                    "on-secondary-fixed": "#001f25",
+                    "on-tertiary": "#442b00",
+                    "surface-bright": "#34384c",
+                    "outline": "#919096",
+                    "surface": "#0e1224",
+                    "background": "#0e1224",
+                    "on-tertiary-fixed-variant": "#624000",
+                    "on-background": "#dee1fb"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "lg": "40px",
+                    "sm": "16px",
+                    "base": "4px",
+                    "md": "24px",
+                    "gutter": "20px",
+                    "xs": "8px",
+                    "margin": "32px",
+                    "xl": "64px"
+            },
+            "fontFamily": {
+                    "body-lg": ["Space Grotesk"],
+                    "mono-data": ["Space Grotesk"],
+                    "h1": ["Space Grotesk"],
+                    "label-caps": ["Space Grotesk"],
+                    "body-md": ["Space Grotesk"],
+                    "h3": ["Space Grotesk"],
+                    "h2": ["Space Grotesk"]
+            },
+            "fontSize": {
+                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "mono-data": ["14px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                    "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                    "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                    "h2": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            background-color: #0e1224;
+            color: #dee1fb;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="bg-white dark:bg-zinc-900 border-b-4 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] sticky top-0 z-50">
+<div class="flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-4">
+<div class="text-2xl font-black italic bg-[#FFEE00] px-2 border-2 border-black dark:border-white text-zinc-900">
+                    BAR_LAB.EXE
+                </div>
+<div class="hidden md:flex gap-6">
+<span class="font-['Space_Grotesk'] font-bold text-black dark:text-white uppercase tracking-tighter cursor-pointer hover:translate-x-[2px] hover:translate-y-[2px] transition-all">SYSTEM_LOG</span>
+<span class="font-['Space_Grotesk'] font-bold text-zinc-600 dark:text-zinc-400 uppercase tracking-tighter cursor-pointer hover:translate-x-[2px] hover:translate-y-[2px] transition-all">ARCHIVE</span>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-zinc-900 dark:text-zinc-50 cursor-pointer" data-icon="biotech">biotech</span>
+<span class="material-symbols-outlined text-zinc-900 dark:text-zinc-50 cursor-pointer" data-icon="settings">settings</span>
+</div>
+</div>
+</header>
+<main class="max-w-7xl mx-auto px-6 pt-12">
+<!-- Hero Search Section -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-xl items-center mb-xl">
+<div class="lg:col-span-7 space-y-md">
+<div class="inline-block bg-secondary-container px-base py-1 border-2 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+<span class="text-on-secondary font-label-caps text-label-caps">STATUS: READY TO SCAN</span>
+</div>
+<h1 class="font-h1 text-h1 text-on-surface uppercase leading-none">
+                    「AIスキャン開始」
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    次世代ラボラトリー・プロトコルへようこそ。予算とパラメータを入力して、最適な検体とデータを瞬時に抽出します。
+                </p>
+<!-- Search Interface -->
+<div class="bg-surface-container border-2 border-[#414868] p-md space-y-md shadow-[8px_8px_0px_0px_rgba(26,27,38,0.5)]">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-sm">
+<div class="space-y-base">
+<label class="font-label-caps text-label-caps text-secondary uppercase block">検体タイプ / SPECIMEN TYPE</label>
+<div class="relative">
+<select class="w-full bg-surface-container-lowest border-2 border-outline text-on-surface p-sm font-body-md focus:border-secondary focus:ring-0 appearance-none">
+<option>すべてのカテゴリ</option>
+<option>バイオメトリック</option>
+<option>デジタルコア</option>
+<option>合成有機物</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none" data-icon="expand_more">expand_more</span>
+</div>
+</div>
+<div class="space-y-base">
+<label class="font-label-caps text-label-caps text-secondary uppercase block">予算設定（円）</label>
+<div class="relative">
+<input class="w-full bg-surface-container-lowest border-2 border-outline text-on-surface p-sm font-mono-data focus:border-secondary focus:ring-0" placeholder="0 - 1,000,000" type="number"/>
+<span class="absolute right-4 top-1/2 -translate-y-1/2 text-on-surface-variant font-mono-data">JPY</span>
+</div>
+</div>
+</div>
+<button class="w-full bg-secondary text-on-secondary font-h3 text-h3 py-sm flex justify-center items-center gap-sm border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all active:translate-x-[4px] active:translate-y-[4px]">
+<span class="material-symbols-outlined" data-icon="manage_search">manage_search</span>
+                        検体を検索 (SCAN)
+                    </button>
+</div>
+</div>
+<!-- Visual Asset -->
+<div class="lg:col-span-5 relative">
+<div class="aspect-square bg-surface-container-high border-2 border-[#414868] overflow-hidden relative shadow-[16px_16px_0px_0px_rgba(26,27,38,0.5)]">
+<img class="w-full h-full object-cover mix-blend-overlay opacity-60" data-alt="A futuristic laboratory scene with clinical precision, featuring a glowing holographic data scan hovering over a metallic examination table. The room is bathed in deep navy and teal light, with sharp silhouettes of high-tech scientific equipment and glass tubes filled with luminescent specimens. The atmosphere is nocturnal, focused, and technologically advanced, echoing a Cyber-Lab Noir aesthetic with harsh geometric lines and atmospheric depth." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_yNTxTAzS83p5T_8HPJX1Iuw5QhUvJe6JQIAfTFX1u6nXtTQXGo0ZBl7grYeELfoOKJHVCyl8w9qazHoECAShfKq_CuzzRwMFiceaIcLJ8Pumi_5Tvdh2mgmzRUC_cuTXVAAhcBSuQWDsfYG8rUXHDWD5GscrX22BkcetFD1Ya8XE4xnzyEmpm-vfWnxK8xm1zItns2foNPzEDlGcCCGHeTAAnXQ_0cp62OicpB9GiUVBEakpOMWSBBzwoEFgIDOHfow0A09syd4"/>
+<div class="absolute inset-0 flex flex-col justify-between p-md">
+<div class="flex justify-between items-start">
+<div class="bg-black/50 backdrop-blur-md p-2 border border-secondary text-secondary font-mono-data text-[10px]">
+                                LAT: 35.6895 N<br/>LNG: 139.6917 E
+                            </div>
+<div class="w-12 h-12 border-t-2 border-r-2 border-secondary"></div>
+</div>
+<div class="space-y-base">
+<div class="w-full h-1 bg-secondary/20">
+<div class="w-2/3 h-full bg-secondary"></div>
+</div>
+<div class="flex justify-between font-mono-data text-[10px] text-secondary">
+<span>SCANNING PROGRESS</span>
+<span>68%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Bento Grid Insights -->
+<section class="grid grid-cols-1 md:grid-cols-3 gap-md mb-xl">
+<!-- Large Card -->
+<div class="md:col-span-2 bg-surface-container-low border-2 border-[#414868] p-md flex flex-col justify-between min-h-[300px] relative overflow-hidden">
+<div class="absolute top-0 right-0 w-32 h-32 opacity-10">
+<span class="material-symbols-outlined text-[120px]" data-icon="database">database</span>
+</div>
+<div class="relative z-10">
+<span class="text-tertiary font-label-caps text-label-caps">LATEST_SCAN_DATA</span>
+<h2 class="font-h2 text-h2 mt-base">最近の検体解析結果</h2>
+</div>
+<div class="relative z-10 flex gap-sm overflow-x-auto pb-base">
+<div class="bg-surface-container-lowest border border-[#414868] p-sm min-w-[160px] hover:bg-[#2F3549] transition-colors cursor-pointer">
+<span class="font-mono-data text-secondary">#0042</span>
+<p class="font-body-md text-on-surface">神経回路コア</p>
+</div>
+<div class="bg-surface-container-lowest border border-[#414868] p-sm min-w-[160px] hover:bg-[#2F3549] transition-colors cursor-pointer">
+<span class="font-mono-data text-secondary">#0051</span>
+<p class="font-body-md text-on-surface">分子同期装置</p>
+</div>
+<div class="bg-surface-container-lowest border border-[#414868] p-sm min-w-[160px] hover:bg-[#2F3549] transition-colors cursor-pointer">
+<span class="font-mono-data text-secondary">#0058</span>
+<p class="font-body-md text-on-surface">量子ビット基板</p>
+</div>
+</div>
+</div>
+<!-- Small Detail Card -->
+<div class="bg-tertiary-container border-2 border-black p-md flex flex-col justify-center text-center shadow-[4px_4px_0px_0px_rgba(0,0,0,1)]">
+<span class="material-symbols-outlined text-tertiary text-4xl mb-base" data-icon="warning" data-weight="fill" style="font-variation-settings: 'FILL' 1;">warning</span>
+<p class="font-h3 text-h3 text-tertiary uppercase">緊急指令</p>
+<p class="font-body-md text-on-tertiary-container mt-base">
+                    未承認のアクセスを検知しました。プロトコル22を適用してください。
+                </p>
+</div>
+</section>
+<!-- Horizontal Data Feed -->
+<section class="space-y-md">
+<div class="flex justify-between items-end border-b-2 border-[#414868] pb-base">
+<h3 class="font-h3 text-h3 uppercase tracking-wider">トレンド検体</h3>
+<span class="font-label-caps text-label-caps text-secondary cursor-pointer hover:underline">VIEW ALL FEED</span>
+</div>
+<div class="space-y-base">
+<!-- Data Row -->
+<div class="flex items-center justify-between p-sm bg-surface-container-high border-2 border-transparent hover:border-secondary hover:bg-[#2F3549] transition-all group cursor-pointer">
+<div class="flex items-center gap-md">
+<span class="font-mono-data text-on-surface-variant group-hover:text-secondary transition-colors">01</span>
+<div>
+<p class="font-body-lg text-on-surface font-bold uppercase">X-99 Synthetic Muscle</p>
+<p class="font-mono-data text-on-surface-variant text-[12px]">TYPE: BIO-SYNC | STABILITY: 98%</p>
+</div>
+</div>
+<div class="flex items-center gap-lg">
+<div class="hidden md:block w-32 bg-primary-container h-2 border border-outline overflow-hidden">
+<div class="bg-secondary h-full w-[80%]"></div>
+</div>
+<span class="font-h3 text-h3 text-on-surface">¥450,000</span>
+</div>
+</div>
+<!-- Data Row -->
+<div class="flex items-center justify-between p-sm bg-surface-container-high border-2 border-transparent hover:border-secondary hover:bg-[#2F3549] transition-all group cursor-pointer">
+<div class="flex items-center gap-md">
+<span class="font-mono-data text-on-surface-variant group-hover:text-secondary transition-colors">02</span>
+<div>
+<p class="font-body-lg text-on-surface font-bold uppercase">Neural Interface V3</p>
+<p class="font-mono-data text-on-surface-variant text-[12px]">TYPE: NEURO | STABILITY: 92%</p>
+</div>
+</div>
+<div class="flex items-center gap-lg">
+<div class="hidden md:block w-32 bg-primary-container h-2 border border-outline overflow-hidden">
+<div class="bg-secondary h-full w-[65%]"></div>
+</div>
+<span class="font-h3 text-h3 text-on-surface">¥890,000</span>
+</div>
+</div>
+<!-- Data Row -->
+<div class="flex items-center justify-between p-sm bg-surface-container-high border-2 border-transparent hover:border-secondary hover:bg-[#2F3549] transition-all group cursor-pointer">
+<div class="flex items-center gap-md">
+<span class="font-mono-data text-on-surface-variant group-hover:text-secondary transition-colors">03</span>
+<div>
+<p class="font-body-lg text-on-surface font-bold uppercase">Void-Core Processor</p>
+<p class="font-mono-data text-on-surface-variant text-[12px]">TYPE: QUANTUM | STABILITY: 74%</p>
+</div>
+</div>
+<div class="flex items-center gap-lg">
+<div class="hidden md:block w-32 bg-primary-container h-2 border border-outline overflow-hidden">
+<div class="bg-tertiary h-full w-[40%]"></div>
+</div>
+<span class="font-h3 text-h3 text-on-surface">¥1,200,000</span>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md z-50 flex justify-around items-center h-20 px-4 bg-white dark:bg-zinc-900 border-4 border-black dark:border-white rounded-full shadow-[8px_8px_0px_0px_rgba(0,0,0,1)]">
+<div class="flex flex-col items-center justify-center p-2 text-zinc-900 dark:text-zinc-50 hover:bg-[#4ECDC4] transition-colors cursor-pointer">
+<span class="material-symbols-outlined" data-icon="home_app_logo">home_app_logo</span>
+<span class="font-['Space_Grotesk'] font-bold text-[12px] uppercase">EXPLORE</span>
+</div>
+<div class="bg-[#FFEE00] text-black border-2 border-black rounded-full p-2 translate-y-[-4px] flex flex-col items-center justify-center min-w-[70px] shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+<span class="material-symbols-outlined" data-icon="manage_search">manage_search</span>
+<span class="font-['Space_Grotesk'] font-bold text-[12px] uppercase">SEARCH</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 text-zinc-900 dark:text-zinc-50 hover:bg-[#4ECDC4] transition-colors cursor-pointer">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+<span class="font-['Space_Grotesk'] font-bold text-[12px] uppercase">SAVED</span>
+</div>
+<div class="flex flex-col items-center justify-center p-2 text-zinc-900 dark:text-zinc-50 hover:bg-[#4ECDC4] transition-colors cursor-pointer">
+<span class="material-symbols-outlined" data-icon="database">database</span>
+<span class="font-['Space_Grotesk'] font-bold text-[12px] uppercase">LOGS</span>
+</div>
+</nav>
+</body></html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="ja"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+        }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background-color: #0e1224;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface-container": "#1b1f31",
+                        "on-tertiary-fixed": "#291800",
+                        "on-primary-fixed-variant": "#454652",
+                        "secondary-fixed-dim": "#4ad7f3",
+                        "surface-container-highest": "#303447",
+                        "primary-container": "#1a1b26",
+                        "on-surface": "#dee1fb",
+                        "on-secondary-container": "#00424d",
+                        "on-primary-fixed": "#1a1b26",
+                        "tertiary-fixed-dim": "#f0be75",
+                        "tertiary-container": "#291800",
+                        "on-primary-container": "#838391",
+                        "surface-container-high": "#25293c",
+                        "on-surface-variant": "#c8c5cc",
+                        "surface-container-lowest": "#090d1f",
+                        "tertiary": "#f0be75",
+                        "on-error-container": "#ffdad6",
+                        "primary": "#c6c5d4",
+                        "outline-variant": "#47464c",
+                        "secondary-container": "#00b6d0",
+                        "inverse-primary": "#5d5d6a",
+                        "secondary-fixed": "#a6eeff",
+                        "error": "#ffb4ab",
+                        "on-error": "#690005",
+                        "tertiary-fixed": "#ffddb2",
+                        "on-primary": "#2f303b",
+                        "error-container": "#93000a",
+                        "surface-tint": "#c6c5d4",
+                        "surface-container-low": "#161b2d",
+                        "secondary": "#4ad7f3",
+                        "surface-dim": "#0e1224",
+                        "on-secondary-fixed-variant": "#004e5b",
+                        "inverse-on-surface": "#2b2f43",
+                        "primary-fixed": "#e2e1f1",
+                        "on-tertiary-container": "#a77c3a",
+                        "inverse-surface": "#dee1fb",
+                        "surface-variant": "#303447",
+                        "on-secondary": "#00363f",
+                        "primary-fixed-dim": "#c6c5d4",
+                        "on-secondary-fixed": "#001f25",
+                        "on-tertiary": "#442b00",
+                        "surface-bright": "#34384c",
+                        "outline": "#919096",
+                        "surface": "#0e1224",
+                        "background": "#0e1224",
+                        "on-tertiary-fixed-variant": "#624000",
+                        "on-background": "#dee1fb"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "lg": "40px",
+                        "sm": "16px",
+                        "base": "4px",
+                        "md": "24px",
+                        "gutter": "20px",
+                        "xs": "8px",
+                        "margin": "32px",
+                        "xl": "64px"
+                    },
+                    "fontFamily": {
+                        "body-lg": ["Space Grotesk"],
+                        "mono-data": ["Space Grotesk"],
+                        "h1": ["Space Grotesk"],
+                        "label-caps": ["Space Grotesk"],
+                        "body-md": ["Space Grotesk"],
+                        "h3": ["Space Grotesk"],
+                        "h2": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "mono-data": ["14px", {"lineHeight": "1.4", "fontWeight": "500"}],
+                        "h1": ["48px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                        "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "h3": ["24px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                        "h2": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "600"}]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background text-on-background min-h-screen pb-32">
+<!-- TopAppBar -->
+<header class="sticky top-0 z-50 bg-white dark:bg-zinc-900 border-b-4 border-black dark:border-white shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] flex justify-between items-center w-full px-6 py-4">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-zinc-900 dark:text-zinc-50" data-icon="biotech">biotech</span>
+<h1 class="font-['Space_Grotesk'] font-bold uppercase tracking-tighter text-zinc-900 dark:text-zinc-50">BAR_LAB.EXE</h1>
+</div>
+<div class="text-2xl font-black italic bg-[#FFEE00] px-2 border-2 border-black dark:border-white text-black">
+            Σ-09
+        </div>
+</header>
+<main class="max-w-7xl mx-auto px-6 mt-lg">
+<!-- Hero Section: Bento Layout -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter mb-xl">
+<div class="lg:col-span-8 relative group overflow-hidden border-2 border-outline-variant bg-surface-container shadow-[8px_8px_0px_0px_rgba(26,27,38,0.5)]">
+<img alt="Cyberpunk Bar Interior" class="w-full h-[500px] object-cover opacity-80 mix-blend-luminosity hover:mix-blend-normal transition-all duration-500" data-alt="A cinematic, wide-angle shot of a futuristic cyberpunk bar in Tokyo at midnight. The space is filled with deep indigo shadows and vibrant teal neon accents reflecting off polished metallic surfaces. High-end laboratory glassware is repurposed as cocktail vessels on a glowing obsidian counter. The atmosphere is quiet, technical, and moody, with a slight haze in the air catching sharp beams of light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAYeOZ-YdGozzDKhgWw9wmr1MC89ZnCqXn3_MrU7OkgoIHYK4aOnhsZ3lmWrRPYgjXL9Bg1z6Tb6ujf5jR-cfWxg4r8Z0I3PcVslgbqaj2cEqslsmxUtRzUkCIlh6HvL7JWmDJJ8gvFAIqCs3W4QXguoqE6q3Ur7QlNhctgEGTt0PGEIlDoUcucDFGSnxchV4h_eX9PFhT2AGaPZuMSVLZJtIh-Rp10hY01bdauUB0sAitkbbIiJaeKnh3HbRIB_rSXHjscoIuD9Z0"/>
+<div class="absolute bottom-0 left-0 w-full p-md bg-gradient-to-t from-surface-container-lowest to-transparent">
+<span class="inline-block px-2 py-1 bg-tertiary text-on-tertiary-fixed text-label-caps font-label-caps mb-xs">STATUS: OPERATIONAL</span>
+<h2 class="text-h1 font-h1 text-on-surface">NEO-SHINJUKU VORTEX</h2>
+</div>
+</div>
+<div class="lg:col-span-4 flex flex-col gap-gutter">
+<!-- Action Card -->
+<div class="flex-1 bg-surface-container-high border-2 border-outline-variant p-md shadow-[4px_4px_0px_0px_rgba(26,27,38,0.5)]">
+<div class="flex justify-between items-start mb-md">
+<span class="text-label-caps font-label-caps text-on-surface-variant">SECTOR-ID</span>
+<span class="text-mono-data font-mono-data text-secondary">35.6895° N, 139.6917° E</span>
+</div>
+<div class="space-y-sm mb-lg">
+<div class="flex items-center gap-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary" data-icon="timer">timer</span>
+<span class="text-body-md font-body-md">18:00 - 04:00 (JST)</span>
+</div>
+<div class="flex items-center gap-xs text-on-surface">
+<span class="material-symbols-outlined text-secondary" data-icon="groups">groups</span>
+<span class="text-body-md font-body-md">CAPACITY: 12 LAB-UNITS</span>
+</div>
+</div>
+<button class="w-full py-md bg-secondary text-on-secondary font-h3 text-h3 border-2 border-black shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] hover:translate-x-[2px] hover:translate-y-[2px] hover:shadow-none transition-all active:translate-x-[4px] active:translate-y-[4px]">
+                        予約プロトコル開始
+                    </button>
+</div>
+</div>
+</div>
+<!-- Detail Sections Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-lg">
+<!-- Section 1: 解析データ -->
+<section class="space-y-md">
+<div class="flex items-center gap-xs border-b-2 border-outline-variant pb-xs">
+<span class="material-symbols-outlined text-tertiary" data-icon="monitoring">monitoring</span>
+<h3 class="text-h3 font-h3 text-on-surface">解析データ</h3>
+</div>
+<div class="bg-surface-container-low border-2 border-outline-variant p-sm space-y-md shadow-[4px_4px_0px_0px_rgba(26,27,38,0.5)]">
+<div class="space-y-xs">
+<div class="flex justify-between text-label-caps font-label-caps text-on-surface-variant">
+<span>ALCOHOL PURITY</span>
+<span class="text-secondary">98.4%</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest">
+<div class="h-full bg-secondary" style="width: 98.4%"></div>
+</div>
+</div>
+<div class="space-y-xs">
+<div class="flex justify-between text-label-caps font-label-caps text-on-surface-variant">
+<span>CROWD DENSITY</span>
+<span class="text-tertiary">LOW</span>
+</div>
+<div class="h-2 w-full bg-surface-container-highest">
+<div class="h-full bg-tertiary" style="width: 32%"></div>
+</div>
+</div>
+<div class="pt-sm border-t border-outline-variant/30 text-mono-data font-mono-data text-on-surface-variant leading-relaxed">
+                        分子ミクソロジーの手法を用いた精密なドリンク構成。全てのカクテルは2nm精度のフィルターを通過済み。
+                    </div>
+</div>
+</section>
+<!-- Section 2: 雰囲気 -->
+<section class="space-y-md">
+<div class="flex items-center gap-xs border-b-2 border-outline-variant pb-xs">
+<span class="material-symbols-outlined text-tertiary" data-icon="temp_preferences_custom">temp_preferences_custom</span>
+<h3 class="text-h3 font-h3 text-on-surface">雰囲気</h3>
+</div>
+<div class="grid grid-cols-2 gap-sm">
+<div class="col-span-2 relative aspect-video border-2 border-outline-variant overflow-hidden">
+<img alt="Interior Detail" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all" data-alt="A close-up shot of an ultra-modern bar counter made of dark matte composite material. Minimalist laboratory beakers containing neon blue and amber liquids are arranged in a precise grid. The lighting is clinical and localized, creating deep contrasts. The background shows blurred silhouettes of technical equipment, maintaining a high-tech research facility aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjKETUIirxpJGPmg2gDjSLJdf5avXLHAS7Hb_FesQeXi3NR55AlW1bC9rMJyRHuHbmGip6_RpDXgh7_wRCY9LgWU_FVYfF6TOrvl7nF7GHdpSwwT_qzXhsb0fj7b1lK6rEc9fzmHWU9vCM7blpgwf6BoeEpUhIGbDiCfgi8vdbFNpYje4kPAFKWbvTaC_xzkC9TIegA4ptCnd3A39fmMk6IiKZ40jFjUNFXLiW7jU7yVBN2ASRFkJIwKmumQfCHphtb2E5BoKBNdE"/>
+</div>
+<div class="bg-surface-container border-2 border-outline-variant p-xs flex flex-col items-center justify-center">
+<span class="text-label-caps font-label-caps text-on-surface-variant mb-base">LIGHT</span>
+<span class="text-body-md font-body-md text-on-surface">NOIR</span>
+</div>
+<div class="bg-surface-container border-2 border-outline-variant p-xs flex flex-col items-center justify-center">
+<span class="text-label-caps font-label-caps text-on-surface-variant mb-base">AUDIO</span>
+<span class="text-body-md font-body-md text-on-surface">AMBIENT</span>
+</div>
+</div>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                    視覚的ノイズを極限まで排除した、集中と沈黙のための空間。研究端末のようなカウンター席のみで構成。
+                </p>
+</section>
+<!-- Section 3: コスト -->
+<section class="space-y-md">
+<div class="flex items-center gap-xs border-b-2 border-outline-variant pb-xs">
+<span class="material-symbols-outlined text-tertiary" data-icon="database">database</span>
+<h3 class="text-h3 font-h3 text-on-surface">コスト</h3>
+</div>
+<div class="bg-surface-container-high border-2 border-outline-variant overflow-hidden shadow-[4px_4px_0px_0px_rgba(26,27,38,0.5)]">
+<table class="w-full text-left border-collapse">
+<thead>
+<tr class="bg-surface-container-highest border-b-2 border-outline-variant">
+<th class="p-sm text-label-caps font-label-caps text-on-surface">SERVICE</th>
+<th class="p-sm text-label-caps font-label-caps text-on-surface text-right">CREDITS</th>
+</tr>
+</thead>
+<tbody class="text-mono-data font-mono-data">
+<tr class="border-b border-outline-variant/30">
+<td class="p-sm text-on-surface-variant">ENTRY PROTOCOL</td>
+<td class="p-sm text-secondary text-right">¥2,500</td>
+</tr>
+<tr class="border-b border-outline-variant/30">
+<td class="p-sm text-on-surface-variant">STD SYMBOL</td>
+<td class="p-sm text-secondary text-right">¥1,800</td>
+</tr>
+<tr>
+<td class="p-sm text-on-surface-variant">EXP INFUSION</td>
+<td class="p-sm text-secondary text-right">¥3,200</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="flex items-start gap-sm p-sm bg-tertiary/10 border border-tertiary">
+<span class="material-symbols-outlined text-tertiary" data-icon="warning">warning</span>
+<p class="text-mono-data text-tertiary font-mono-data">
+                        価格はリアルタイムの供給量により変動します。
+                    </p>
+</div>
+</section>
+</div>
+</main>
+<!-- BottomNavBar (Only shown on mobile, as per shared logic for sub-pages check) -->
+<nav class="md:hidden fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md z-50 bg-white dark:bg-zinc-900 border-4 border-black dark:border-white shadow-[8px_8px_0px_0px_rgba(0,0,0,1)] rounded-full flex justify-around items-center h-20 px-4">
+<a class="flex flex-col items-center justify-center p-2 text-zinc-900 dark:text-zinc-50 hover:bg-[#4ECDC4] transition-colors active:translate-y-0 active:shadow-none" href="#">
+<span class="material-symbols-outlined" data-icon="home_app_logo">home_app_logo</span>
+<span class="font-['Space_Grotesk'] font-bold text-[12px] uppercase">EXPLORE</span>
+</a>
+<a class="bg-[#FFEE00] text-black border-2 border-black rounded-full p-2 translate-y-[-4px] flex flex-col items-center justify-center hover:bg-[#4ECDC4] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="manage_search">manage_search</span>
+<span class="font-['Space_Grotesk'] font-bold text-[12px] uppercase">SEARCH</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 text-zinc-900 dark:text-zinc-50 hover:bg-[#4ECDC4] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="favorite">favorite</span>
+<span class="font-['Space_Grotesk'] font-bold text-[12px] uppercase">SAVED</span>
+</a>
+<a class="flex flex-col items-center justify-center p-2 text-zinc-900 dark:text-zinc-50 hover:bg-[#4ECDC4] transition-colors" href="#">
+<span class="material-symbols-outlined" data-icon="database">database</span>
+<span class="font-['Space_Grotesk'] font-bold text-[12px] uppercase">LOGS</span>
+</a>
+</nav>
+</body></html>
