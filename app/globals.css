@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: #0e1224;
+  --surface-bright: #1a1b26;
+  --primary: #FFEE00;
+  --accent: #2DD4BF;
+  --text-dim: #94a3b8;
+}
+
+body {
+  background-color: var(--surface);
+  color: #ffffff;
+  font-family: var(--font-inter), sans-serif;
+}
+
+.font-space-grotesk {
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+/* Cyber-Lab Noir Custom Styles */
+.lab-border {
+  border: 1px solid rgba(65, 72, 104, 0.5);
+}
+
+.lab-card {
+  background: var(--surface-bright);
+  border: 1px solid rgba(65, 72, 104, 0.8);
+  box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.5);
+}
+
+.neon-glow-teal {
+  box-shadow: 0 0 15px rgba(45, 212, 191, 0.3);
+}
+
+.neon-glow-yellow {
+  box-shadow: 0 0 15px rgba(255, 238, 0, 0.3);
+}
+
+@keyframes scan-line {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.animate-scan {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-scan::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+  animation: scan-line 3s linear infinite;
+}
