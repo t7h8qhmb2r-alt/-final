@@ -1,5 +1,5 @@
 import React from 'react';
-import { Terminal, Search, Settings, Explore, Favorite, ReceiptLong } from 'lucide-react';
+import { Terminal, Search, Settings, Compass, Heart, ReceiptText } from 'lucide-react';
 
 const HomePage = () => {
   return (
@@ -110,7 +110,7 @@ const HomePage = () => {
       {/* Navigation */}
       <nav className="fixed bottom-0 left-0 w-full z-50 bg-[#1A1B26] border-t-2 border-[#414868] h-20 px-6 flex justify-around items-center">
         <div className="flex flex-col items-center gap-1 text-slate-500">
-          <Explore size={24} />
+          <Compass size={24} />
           <span className="text-[10px] font-bold">EXPLORE</span>
         </div>
         <div className="flex flex-col items-center gap-1 bg-[#FFEE00] text-black px-4 py-1 rounded-sm">
@@ -118,11 +118,11 @@ const HomePage = () => {
           <span className="text-[10px] font-bold">SEARCH</span>
         </div>
         <div className="flex flex-col items-center gap-1 text-slate-500">
-          <Favorite size={24} />
+          <Heart size={24} />
           <span className="text-[10px] font-bold">SAVED</span>
         </div>
         <div className="flex flex-col items-center gap-1 text-slate-500">
-          <ReceiptLong size={24} />
+          <ReceiptText size={24} />
           <span className="text-[10px] font-bold">LOGS</span>
         </div>
       </nav>
